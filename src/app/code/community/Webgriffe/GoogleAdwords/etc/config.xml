@@ -33,4 +33,33 @@
             </webgriffe_googleadwords_setup>
         </resources>
     </global>
+    <frontend>
+        <layout>
+            <updates>
+                <webgriffe_googleadwords>
+                    <file>webgriffe_googleadwords.xml</file>
+                </webgriffe_googleadwords>
+            </updates>
+        </layout>
+        <events>
+            <checkout_onepage_controller_success_action>
+                <observers>
+                    <webgriffe_googleadwords>
+                        <type>singleton</type>
+                        <class>webgriffe_googleadwords/observer</class>
+                        <method>setConversionOrderIds</method>
+                    </webgriffe_googleadwords>
+                </observers>
+            </checkout_onepage_controller_success_action>
+        </events>
+    </frontend>
+    <default>
+        <google>
+            <adwords>
+                <conversion_language>en</conversion_language>
+                <conversion_format>3</conversion_format>
+                <conversion_color>ffffff</conversion_color>
+            </adwords>
+        </google>
+    </default>
 </config>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="before_body_end">
+            <block name="google_adwords.remarketing" type="webgriffe_googleadwords/remarketing"/>
+        </reference>
+    </default>
+    <checkout_onepage_success>
+        <reference name="before_body_end">
+            <block name="google_adwords.conversion" type="webgriffe_googleadwords/conversion" after="google_adwords.remarketing" />
+        </reference>
+    </checkout_onepage_success>
+</layout>

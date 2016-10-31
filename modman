@@ -1,2 +1,3 @@
 src/app/code/community/Webgriffe/GoogleAdwords/ app/code/community/Webgriffe/GoogleAdwords/
+src/app/design/frontend/base/default/layout/webgriffe_googleadwords.xml app/design/frontend/base/default/layout/webgriffe_googleadwords.xml
 src/app/etc/modules/Webgriffe_GoogleAdwords.xml app/etc/modules/Webgriffe_GoogleAdwords.xml

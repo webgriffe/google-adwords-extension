@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <google>
+            <groups>
+                <adwords translate="label">
+                    <label>Google AdWords</label>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <sort_order>1000</sort_order>
+                    <fields>
+                        <enabled translate="label comment">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>0</sort_order>
+                        </enabled>
+                        <account_id translate="label comment">
+                            <label>Account ID</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry validate-digits</validate>
+                            <comment>Google AdWords account identification number.</comment>
+                            <depends>
+                                <enabled>1</enabled>
+                            </depends>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>10</sort_order>
+                        </account_id>
+                        <conversion_language translate="label comment">
+                            <label>Conversion Language</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry</validate>
+                            <depends>
+                                <enabled>1</enabled>
+                            </depends>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>20</sort_order>
+                        </conversion_language>
+                        <conversion_format translate="label comment">
+                            <label>Conversion Format</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry</validate>
+                            <depends>
+                                <enabled>1</enabled>
+                            </depends>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>30</sort_order>
+                        </conversion_format>
+                        <conversion_color translate="label comment">
+                            <label>Conversion Color</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry</validate>
+                            <depends>
+                                <enabled>1</enabled>
+                            </depends>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>40</sort_order>
+                        </conversion_color>
+                        <conversion_label translate="label comment">
+                            <label>Conversion Label</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry</validate>
+                            <depends>
+                                <enabled>1</enabled>
+                            </depends>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>50</sort_order>
+                        </conversion_label>
+                    </fields>
+                </adwords>
+            </groups>
+        </google>
+    </sections>
+</config>

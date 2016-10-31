@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Webgriffe_GoogleAdwords>
+            <version>1.0.0</version>
+        </Webgriffe_GoogleAdwords>
+    </modules>
+    <global>
+        <models>
+            <webgriffe_googleadwords>
+                <class>Webgriffe_GoogleAdwords_Model</class>
+                <resourceModel>webgriffe_googleadwords_resource</resourceModel>
+            </webgriffe_googleadwords>
+            <webgriffe_googleadwords_resource>
+                <class>Webgriffe_GoogleAdwords_Model_Resource</class>
+            </webgriffe_googleadwords_resource>
+        </models>
+        <blocks>
+            <webgriffe_googleadwords>
+                <class>Webgriffe_GoogleAdwords_Block</class>
+            </webgriffe_googleadwords>
+        </blocks>
+        <helpers>
+            <webgriffe_googleadwords>
+                <class>Webgriffe_GoogleAdwords_Helper</class>
+            </webgriffe_googleadwords>
+        </helpers>
+        <resources>
+            <webgriffe_googleadwords_setup>
+                <setup>
+                    <module>Webgriffe_GoogleAdwords</module>
+                </setup>
+            </webgriffe_googleadwords_setup>
+        </resources>
+    </global>
+</config>
